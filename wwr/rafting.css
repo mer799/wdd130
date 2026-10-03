@@ -1,0 +1,193 @@
+/* =========================
+   GENERAL PAGE STYLES
+   ========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #ffffff;
+}
+
+header,
+main,
+footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+header img {
+    width: 100px;
+    height: auto;
+}
+
+/* =========================
+   NAVIGATION
+   ========================= */
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+nav li {
+    margin: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #0066cc;
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+
+.hero {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+}
+
+/* =========================
+   HISTORY SECTION
+   ========================= */
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin: 40px 20px;
+}
+
+.history h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.history img {
+    width: 100%;
+    height: auto;
+}
+
+.history p {
+    line-height: 1.6;
+}
+
+/* =========================
+   ADVENTURES SECTION
+   ========================= */
+
+.adventures {
+    margin: 40px 20px;
+}
+
+.adventures h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.adventures figure {
+    margin: 0;
+    text-align: center;
+}
+
+.adventures img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.adventures figcaption {
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Put the five adventure figures in a row */
+.adventures {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+/* Make the heading span the entire section */
+.adventures h2 {
+    grid-column: 1 / -1;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 20px;
+    background-color: #f5f5f5;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+.socialmedia {
+    display: flex;
+    gap: 15px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 35px;
+    height: 35px;
+}
+
+S
